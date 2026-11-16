@@ -1,6 +1,6 @@
 ----------------------------------------------------
 -- variant 2
--- 2 x 4
+-- size, gap, count, pallet_offset from HMI
 -- labels on side y
 ----------------------------------------------------
 preprocess = 2
@@ -27,12 +27,9 @@ hmi_pallet_offset_x = 0
 hmi_pallet_offset_y = 0
 hmi_pallet_offset_z = 0
 ----------------------------------------------------
-hmi_pallet_size_x = 800
-hmi_pallet_size_y = 1200
-hmi_pallet_size_z = 140
-----------------------------------------------------
 hmi_partition_offset_x = 35
 hmi_partition_offset_y = 135
+hmi_partition_offset_z = 0
 ----------------------------------------------------
 size_x = hmi_size_x
 size_y = hmi_size_y
@@ -53,7 +50,6 @@ shift_y1 = 0
 ----------------------------------------------------
 pallet_size_x = 800
 pallet_size_y = 1200
-pallet_size_z = 140
 pallet_offset_x = hmi_pallet_offset_x
 pallet_offset_y = hmi_pallet_offset_y
 pallet_offset_z = hmi_pallet_offset_z

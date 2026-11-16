@@ -1,7 +1,7 @@
 ----------------------------------------------------
 preprocess = 0
 template = 0
-pick_point = 1
+pick_point = 0
 ----------------------------------------------------
 hmi_size_x = 0
 hmi_size_y = 0
@@ -22,10 +22,6 @@ hmi_count_z1 = 0
 hmi_pallet_offset_x = 0
 hmi_pallet_offset_y = 0
 hmi_pallet_offset_z = 0
-----------------------------------------------------
-hmi_pallet_size_x = 0
-hmi_pallet_size_y = 0
-hmi_pallet_size_z = 0
 ----------------------------------------------------
 hmi_partition_offset_x = 0
 hmi_partition_offset_y = 0
@@ -50,7 +46,6 @@ shift_y1 = 0
 ----------------------------------------------------
 pallet_size_x = 0
 pallet_size_y = 0
-pallet_size_z = 0
 pallet_offset_x = 0
 pallet_offset_y = 0
 pallet_offset_z = 0

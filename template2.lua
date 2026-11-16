@@ -117,16 +117,16 @@ function fill_pallet_coord()
       if (layer_rot[l + 1] == 180) then
         -- left pallet
         index = pallet_seq_L_rot[i + 1]
-        p_offset_x = pallet_offset_x + pallet_center_x + psize_x - (P_pallet_coord_tmp[index].offset_x + extra_gap_x[index + 1])
-        p_offset_y = pallet_offset_y + pallet_center_y + psize_y - (P_pallet_coord_tmp[index].offset_y + extra_gap_y[index + 1])
+        p_offset_x = pallet_size_x - (pallet_offset_x + pallet_center_x + P_pallet_coord_tmp[index].offset_x + extra_gap_x[index + 1])
+        p_offset_y = pallet_size_y - (pallet_offset_y + pallet_center_y + P_pallet_coord_tmp[index].offset_y + extra_gap_y[index + 1])
         p_offset_z = pallet_offset_z + size_z + l * (size_z + gap_z)
         p_rot_z = P_pallet_coord_tmp[index].rot_z
         p_pick_p = pick_p_swap[P_pallet_coord_tmp[index].pick_p] -- swap
         P_pallet_coord_L[l * count_l + i] = { offset_x = p_offset_x, offset_y = p_offset_y, offset_z = p_offset_z, rot_z = p_rot_z, pick_p = p_pick_p }
         -- right pallet
         index = pallet_seq_R_rot[i + 1]
-        p_offset_x = pallet_size_x - (pallet_offset_x + pallet_center_x + psize_x - (P_pallet_coord_tmp[index].offset_x + extra_gap_x[index + 1]))
-        p_offset_y = pallet_size_y - (pallet_offset_y + pallet_center_y + psize_y - (P_pallet_coord_tmp[index].offset_y + extra_gap_y[index + 1]))
+        p_offset_x = pallet_offset_x + pallet_center_x + P_pallet_coord_tmp[index].offset_x + extra_gap_x[index + 1]
+        p_offset_y = pallet_offset_y + pallet_center_y + P_pallet_coord_tmp[index].offset_y + extra_gap_y[index + 1]
         p_offset_z = pallet_offset_z + size_z + l * (size_z + gap_z)
         p_rot_z = P_pallet_coord_tmp[index].rot_z
         p_pick_p = P_pallet_coord_tmp[index].pick_p
@@ -134,7 +134,7 @@ function fill_pallet_coord()
       elseif (layer_rot[l + 1] == 1) then
         -- left pallet
         index = pallet_seq_L_rot[i + 1]
-        p_offset_x = pallet_offset_x + pallet_center_x + psize_x - (P_pallet_coord_tmp[index].offset_x + extra_gap_x[index + 1])
+        p_offset_x = pallet_size_x - (pallet_offset_x + pallet_center_x + P_pallet_coord_tmp[index].offset_x + extra_gap_x[index + 1])
         p_offset_y = pallet_offset_y + pallet_center_y + P_pallet_coord_tmp[index].offset_y + extra_gap_y[index + 1]
         p_offset_z = pallet_offset_z + size_z + l * (size_z + gap_z)
         p_rot_z = P_pallet_coord_tmp[index].rot_z
@@ -146,7 +146,7 @@ function fill_pallet_coord()
         P_pallet_coord_L[l * count_l + i] = { offset_x = p_offset_x, offset_y = p_offset_y, offset_z = p_offset_z, rot_z = p_rot_z, pick_p = p_pick_p }
         -- right pallet
         index = pallet_seq_R_rot[i + 1]
-        p_offset_x = pallet_size_x - (pallet_offset_x + pallet_center_x + psize_x - (P_pallet_coord_tmp[index].offset_x + extra_gap_x[index + 1]))
+        p_offset_x = pallet_offset_x + pallet_center_x + P_pallet_coord_tmp[index].offset_x + extra_gap_x[index + 1]
         p_offset_y = pallet_size_y - (pallet_offset_y + pallet_center_y + P_pallet_coord_tmp[index].offset_y + extra_gap_y[index + 1])
         p_offset_z = pallet_offset_z + size_z + l * (size_z + gap_z)
         p_rot_z = P_pallet_coord_tmp[index].rot_z

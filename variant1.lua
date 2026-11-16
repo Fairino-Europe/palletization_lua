@@ -7,9 +7,9 @@ preprocess = 1
 template = 2
 pick_point = 1
 ----------------------------------------------------
-hmi_size_x = 290
-hmi_size_y = 388
-hmi_size_z = 290
+hmi_size_x = 365
+hmi_size_y = 370
+hmi_size_z = 200
 ----------------------------------------------------
 hmi_gap_x = 0
 hmi_gap_y = 0
@@ -17,7 +17,7 @@ hmi_gap_z = 0
 ----------------------------------------------------
 hmi_count_x = 2
 hmi_count_y = 3
-hmi_count_z = 6
+hmi_count_z = 4
 ----------------------------------------------------
 hmi_count_x1 = 0
 hmi_count_y1 = 0
@@ -26,10 +26,6 @@ hmi_count_z1 = 0
 hmi_pallet_offset_x = 0
 hmi_pallet_offset_y = 0
 hmi_pallet_offset_z = 0
-----------------------------------------------------
-hmi_pallet_size_x = 800
-hmi_pallet_size_y = 1200
-hmi_pallet_size_z = 140
 ----------------------------------------------------
 hmi_partition_offset_x = 1
 hmi_partition_offset_y = 1
@@ -54,7 +50,6 @@ shift_y1 = 0
 ----------------------------------------------------
 pallet_size_x = 800
 pallet_size_y = 1200
-pallet_size_z = 140
 pallet_offset_x = hmi_pallet_offset_x
 pallet_offset_y = hmi_pallet_offset_y
 pallet_offset_z = hmi_pallet_offset_z
